@@ -99,6 +99,23 @@
             border-radius: 4px;
             resize: vertical;
         }
+
+        .profile-radio-content{
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .profile-radio-content > label{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .profile{
+            width: 40px;
+            border-radius: 50%;
+            margin-left: 12px;
+        }
     </style>
 </head>
 </html>
@@ -121,6 +138,31 @@
                 <label class="label text" for="name">Name</label>
                 <input class="input" type="text" id="name" name="name" placeholder="your name.." required>
             </div>
+    <div class="row-content">
+        <label class="label text" for="profile">Profile image</label>
+      <div class="profile-radio-content">
+            <label>
+                <input type="radio" id="profile1" name="profile"
+                value="image\image1.jpeg" required>
+                <img class="profile" id="image1" src="image\image1.jpeg">
+            </label>
+            <label>
+                <input type="radio" id="profile2" name="profile"
+                value="image\image2.jpeg" required>
+                <img class="profile" id="image2" src="image\image2.jpeg">
+            </label>
+            <label>
+                <input type="radio" id="profile3" name="profile"
+                value="image\image3.jpeg" required>
+                <img class="profile" id="image3" src="image\image3.jpeg">
+            </label>
+            <label>
+                <input type="radio" id="profile4" name="profile"
+                value="image\image4.jpeg" required>
+                <img class="profile" id="image4" src="image\image4.jpeg" alt="">
+            </label>
+        </div>
+    </div>        
     </form>
     </div>
 </body>
